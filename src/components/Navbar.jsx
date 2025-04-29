@@ -50,8 +50,8 @@ const Navbar = () => {
 </ul>
 
       <form className="d-flex">
-      <Link to="/login" className="btn btn-success my-1 my-sm-0">Login</Link>
-      <Link to="/register" className="btn btn-danger my-1 my-sm-0">Register</Link>
+      <Link to="/login" className="btn btn-success my-1 my-sm-0"> Login </Link>
+      <Link to="/register" className="btn btn-danger my-1 my-sm-0"> Register </Link>
       </form>
      {/* cart Links */}
       <ul className='navbar-nav ms-auto'> 
