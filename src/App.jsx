@@ -11,6 +11,8 @@ import ProductNotFound from './pages/ProductNotFound'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Footer from './components/Footer'
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 
  const App = () => {
@@ -18,7 +20,6 @@ import Footer from './components/Footer'
     <>
     <Navbar/>
      <div className='container my-2'>
-        
         <Routes>
           <Route path='' element={<Home/>}/>
           <Route path='/shop' element={<Shop/>}/>
@@ -27,6 +28,8 @@ import Footer from './components/Footer'
           <Route path='/about' element={<About/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='' element={<ProductNotFound/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
         </Routes>
      </div>
      <Footer/>

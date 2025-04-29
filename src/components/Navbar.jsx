@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '/src/assets/logo.png';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -49,8 +50,8 @@ const Navbar = () => {
 </ul>
 
       <form className="d-flex">
-        <input className="form-control me-sm-2" type="search" placeholder="Search"/>
-        <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      <Link to="/login" className="btn btn-success my-1 my-sm-0">Login</Link>
+      <Link to="/register" className="btn btn-danger my-1 my-sm-0">Register</Link>
       </form>
      {/* cart Links */}
       <ul className='navbar-nav ms-auto'> 
